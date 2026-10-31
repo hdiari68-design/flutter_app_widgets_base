@@ -17,10 +17,10 @@ class MainApp extends StatelessWidget {
               Text('Hello World!'),
               Text('Bienvenue dans mon application GuineaStay!'),
               Container(
-                margin: EdgeInsets.all(20),
+                margin: EdgeInsets.all(50),
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 21, 134, 98),
+                  color:Colors.orange,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text(
@@ -30,7 +30,7 @@ class MainApp extends StatelessWidget {
               ),
               Text('Reservez votre sejour en Guinee!'),
               Stack(
-                alignment: Alignment.topRight,
+                alignment: Alignment.bottomLeft,
                 children: [
                   Container(width: 200, height: 200, color: Colors.blue[100]),
                   Icon(Icons.star, size: 100, color: Colors.amber),
@@ -41,7 +41,7 @@ class MainApp extends StatelessWidget {
                 ],
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(Icons.home, color: Colors.blue, size: 40),
